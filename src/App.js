@@ -99,7 +99,7 @@ export default class App extends Component {
         <br/>
         <Panel header="Mascotas">
           
-          <DataTable className="xd" value ={this.state.personas} selectionMode="single" selection={this.state.selectedPersona} onSelectionChange={e => this.setState({ selectedPersona: e.value })}>
+          <DataTable value ={this.state.personas} selectionMode="single" selection={this.state.selectedPersona} onSelectionChange={e => this.setState({ selectedPersona: e.value })}>
             <Column field="id" header="ID Mascota"></Column>
             <Column field="idDuenio" header="ID Dueño"></Column>
             <Column field="idTipoMascota" header="idTipoMascota"></Column>
